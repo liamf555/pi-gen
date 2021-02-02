@@ -32,4 +32,4 @@ jobs:
       # - run: sudo ./build.sh -c test_config
       - run: chmod +x build-docker.sh
 
-      - run: sudo ./build-docker.sh
+      - run: sudo ./build-docker.sh -c test_config
