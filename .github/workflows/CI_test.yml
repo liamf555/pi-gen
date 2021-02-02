@@ -30,7 +30,5 @@ jobs:
       #     dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
           
       # - run: sudo ./build.sh -c test_config
-      - run: docker
-        
 
-      - run: ./build-docker.sh
+      - run: sudo ./build-docker.sh
