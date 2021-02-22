@@ -33,3 +33,10 @@ jobs:
       - run: chmod +x build-docker.sh
 
       - run: sudo ./build-docker.sh
+      
+      - name: Commit image
+        run: |
+          git config --global user.name 'Liam Fletcher'
+          git config --global user.email 'liam.fletcher@bristol.ac.uk'
+          git commit -am "Test Deploy"
+          git push
